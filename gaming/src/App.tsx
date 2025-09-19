@@ -85,7 +85,6 @@ function App() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                padding: { xs: '0 16px', sm: '0 24px' },
               }}
             >
               {/* Hero Text Section */}
@@ -139,7 +138,7 @@ function App() {
                 display: 'flex',
                 justifyContent: 'center',
                 transition: 'margin-top 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-                marginTop: showPromoSlider ? { xs: '324px', sm: '324px', md: '324px' } : '0px', // Account for PromoSlider height + margin
+                marginTop: showPromoSlider ? { xs: '324px', sm: '324px', md: '344px' } : '0px', // Account for PromoSlider height + margin
               }}
             >
               <Widget />
