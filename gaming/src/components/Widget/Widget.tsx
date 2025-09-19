@@ -45,19 +45,19 @@ export const Widget = () => {
   const languageResources = {
     en: {
       header: {
-        spend: "Instant Gaming Power",
+        spend: "Pay",
       },
     },
     es: {
       header: {
-        spend: "Poder de juego al instante",
+        spend: "Pagar",
       },
     },
   };
 
   const config = {
     buildUrl: true,
-    appearance: theme.palette.mode,
+    appearance: "dark",
     transactionProvider: MiniKit,
     walletConfig: {
       onConnect: () => {
@@ -73,6 +73,7 @@ export const Widget = () => {
     allowedCountries: isMiniPay ? miniPayCountries : undefined,
     categories: ["gaming"],
     languageResources,
+    hiddenUI: ["appearance", "header"],
     theme: {
       header: {
         "& p": {
@@ -85,10 +86,14 @@ export const Widget = () => {
         }
       },
       container: {
+        paddingTop: "24px",
         borderRadius: "10px",
-        maxHeight: "600px",
+        maxHeight: "680px",
         minWidth: "320px",
-        boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.82);"
+        boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.82);",
+        [theme.breakpoints.down("md")]: {
+          width: "320px",
+        },
       },
       typography: {
         fontFamily: "Inter, sans-serif",

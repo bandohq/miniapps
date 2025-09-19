@@ -118,7 +118,7 @@ export const createAppTheme = (mode: PaletteMode) => {
   return responsiveFontSizes(theme);
 };
 
-// Default theme (light mode)
-const theme = createAppTheme('light');
+// Default theme (dark mode)
+const theme = createAppTheme('dark');
 
 export default theme;

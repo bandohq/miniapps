@@ -85,7 +85,7 @@ export const ConnectButton = () => {
       }) => {
         const ready = mounted;
         const connected = ready && account && chain;
-        return (
+        return !isMiniPay && (
           <div
             {...(!ready && {
               "aria-hidden": true,

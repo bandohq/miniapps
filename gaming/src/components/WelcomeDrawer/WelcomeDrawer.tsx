@@ -32,9 +32,9 @@ export const WelcomeDrawer: React.FC<WelcomeDrawerProps> = ({ open, onClose }) =
   const promoBanners: PromoBanner[] = [
     {
       id: 1,
-      title: '',
-      subtitle: '',
-      image: '/promo1.png',
+      title: '50% Bonus Credits',
+      subtitle: 'First Purchase',
+      image: '/promo1.mp4',
       gradient: 'linear-gradient(135deg, rgba(244, 65, 229, 0.8) 0%, rgba(68, 219, 246, 0.8) 100%)',
     },
   ];
@@ -121,8 +121,8 @@ export const WelcomeDrawer: React.FC<WelcomeDrawerProps> = ({ open, onClose }) =
               flex: '1 1 auto', 
               position: 'relative',
               height: 'auto',
-              width: '90%',
-              margin: '0 auto',
+              width: { xs: '60%', sm: '60%', md: '60%' },
+              margin: '15px auto',
               '& .slick-slider': {
                 height: '100%',
               },
@@ -218,9 +218,12 @@ export const WelcomeDrawer: React.FC<WelcomeDrawerProps> = ({ open, onClose }) =
                       },
                     }}
                   >
-                    <img
+                    <video
                       src={banner.image}
-                      alt="Promotion"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
                       style={{
                         maxWidth: '100%',
                         maxHeight: '100%',

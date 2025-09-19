@@ -104,7 +104,8 @@ export const GlobalPreferences: React.FC<GlobalPreferencesProps> = ({
       style={{
         borderRadius: "8px", 
         overflow: "hidden",
-        padding: "16px"
+        padding: "16px",
+        zIndex: 3000
       }}
     >
       <>
@@ -112,36 +113,6 @@ export const GlobalPreferences: React.FC<GlobalPreferencesProps> = ({
           {t('main:main.settings', 'Global preferences')}
         </Typography>
         <Stack spacing={3}>
-          {/* Theme Selector */}
-          <Box>
-            <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1 }}>
-              {t('main:main.theme', 'Theme')}
-            </Typography>
-            <ThemeSelector>
-              <div className={`slider ${selectedTheme}`}></div>
-              <div 
-                className={`theme-option ${selectedTheme === 'light' ? 'active' : ''}`}
-                onClick={() => toggleColorMode()}
-              >
-                <LightMode fontSize="small" sx={{ mr: 0.5 }} />
-                {t('main:main.light', 'Light')}
-              </div>
-              <div 
-                className={`theme-option ${selectedTheme === 'dark' ? 'active' : ''}`}
-                onClick={() => toggleColorMode()}
-              >
-                <DarkMode fontSize="small" sx={{ mr: 0.5 }} />
-                {t('main:main.dark', 'Dark')}
-              </div>
-              <div 
-                className={`theme-option ${selectedTheme === 'auto' ? 'active' : ''}`}
-                onClick={() => toggleColorMode()}
-              >
-                <SettingsBrightness fontSize="small" sx={{ mr: 0.5 }} />
-                {t('main:main.auto', 'Auto')}
-              </div>
-            </ThemeSelector>
-          </Box>
           <Box
             component="button"
             sx={{
@@ -160,11 +131,11 @@ export const GlobalPreferences: React.FC<GlobalPreferencesProps> = ({
             }}
             onClick={() => setLanguageView(true)}
           >
-              <Typography variant="body2" sx={{ color: 'ink.i900', display: 'flex', alignItems: 'center' }}>
+              <Typography variant="body2" sx={{ color: 'ink.i000', display: 'flex', alignItems: 'center' }}>
                 {t('main:main.language', 'Language')}
               </Typography>
               <Box sx={{ display: 'flex', alignItems: 'right', justifyContent: 'space-between' }}>
-                <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', color: 'ink.i900' }}>
+                <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', color: 'ink.i000' }}>
                   {language}
                 </Typography>
                 <ChevronRight sx={{ color: 'text.disabled', fontSize: '1.5rem' }} />
