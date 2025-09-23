@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+  background: url('/images/Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+.PhoneInput {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 16px;
+
+  & > div:first-child {
+    width: 30%;
+  }
+
+  & > div:last-child {
+    width: 70%;
+  }
+}
+
+.navbar-box {
+  max-width: 1280px !important;
+}
+
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    opacity: 1;
+    height: auto;
+
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
