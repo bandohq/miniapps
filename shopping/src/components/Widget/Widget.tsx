@@ -77,10 +77,7 @@ export const Widget = () => {
     theme: {
       header: {
         "& p": {
-          background: "linear-gradient(90deg, #F2F2F2 0%, #FF9900 100%)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          backgroundClip: "text",
+          color: "#000000",
           fontWeight: "600",
         }
       },
@@ -97,11 +94,7 @@ export const Widget = () => {
       typography: {
         fontFamily: "Inter, sans-serif",
         "& .MuiTypography-h4": {
-          background: "#000000",
-          fontStyle: "italic",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          backgroundClip: "text",
+          color: "#000000",
           fontWeight: "600",
         },
       },

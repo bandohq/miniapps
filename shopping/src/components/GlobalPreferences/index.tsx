@@ -109,7 +109,7 @@ export const GlobalPreferences: React.FC<GlobalPreferencesProps> = ({
       }}
     >
       <>
-        <Typography variant="h6" sx={{ fontWeight: 500, mb: 3 }}>
+        <Typography variant="h6" sx={{ fontWeight: 500, mb: 3, color: 'ink.i950' }}>
           {t('main:main.settings', 'Global preferences')}
         </Typography>
         <Stack spacing={3}>
@@ -131,14 +131,14 @@ export const GlobalPreferences: React.FC<GlobalPreferencesProps> = ({
             }}
             onClick={() => setLanguageView(true)}
           >
-              <Typography variant="body2" sx={{ color: 'ink.i000', display: 'flex', alignItems: 'center' }}>
+              <Typography variant="body2" sx={{ color: 'ink.i950', display: 'flex', alignItems: 'center' }}>
                 {t('main:main.language', 'Language')}
               </Typography>
               <Box sx={{ display: 'flex', alignItems: 'right', justifyContent: 'space-between' }}>
-                <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', color: 'ink.i000' }}>
+                <Typography variant="body2" sx={{ display: 'flex', alignItems: 'center', color: 'ink.i950' }}>
                   {language}
                 </Typography>
-                <ChevronRight sx={{ color: 'text.disabled', fontSize: '1.5rem' }} />
+                <ChevronRight sx={{ color: 'ink.i950', fontSize: '1.5rem' }} />
               </Box>
           </Box>
         </Stack>

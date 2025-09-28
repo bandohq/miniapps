@@ -100,30 +100,26 @@ function App() {
                   sx={{
                     fontSize: { xs: '1.8rem', sm: '2.2rem', md: '2.5rem' },
                     fontWeight: '700',
-                    background: 'linear-gradient(45deg, #F441E5 0%, #44DBF6 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                    textShadow: '0 0 30px rgba(244, 65, 229, 0.3)',
+                    color: "#000000",
                     marginBottom: '12px',
                     letterSpacing: '-0.02em',
                   }}
                 >
-                  Instant gaming power
+                  Instant shopping power
                 </Typography>
                 
                 <Typography
                   variant="body1"
                   sx={{
                     fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.1rem' },
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    color: '#000000',
                     fontWeight: '400',
                     lineHeight: 1.5,
                     maxWidth: '480px',
                     margin: '0 auto',
                   }}
                 >
-                  Buy gaming giftcards and vouchers directly from your wallet.
+                  Buy Amazon, Shopee, and more e-commerce giftcards directly from your wallet.
                 </Typography>
               </Box>
               

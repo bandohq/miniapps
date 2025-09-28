@@ -76,9 +76,9 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
           sx={{ }}
           disableRipple
         >
-          <ArrowBackIcon sx={{ color: 'ink.i000', fontSize: '1rem' }} />
+          <ArrowBackIcon sx={{ color: 'ink.i950', fontSize: '1rem' }} />
         </IconButton>
-        <Typography variant="h6" sx={{ color: 'ink.i000'}} fontWeight={500}>
+        <Typography variant="h6" sx={{ color: 'ink.i950'}} fontWeight={500}>
           {t('main:main.language').charAt(0).toUpperCase() + t('main:main.language').slice(1)}
         </Typography>
       </HeaderContainer>
@@ -91,8 +91,8 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 onClick={() => handleLanguageSelect(language.code)}
                 disableRipple
               >
-                <Typography sx={{ color: 'ink.i000', fontSize: '0.8rem' }}>{t(`languages:${language.code}`, language.name)}</Typography>
-                {i18n.language === language.code && <CheckIcon sx={{ color: 'ink.i000', fontSize: '1rem' }} />}
+                <Typography sx={{ color: 'ink.i950', fontSize: '0.8rem' }}>{t(`languages:${language.code}`, language.name)}</Typography>
+                {i18n.language === language.code && <CheckIcon sx={{ color: 'ink.i950', fontSize: '1rem' }} />}
               </LanguageButton>
             </ListItem>
           ))}

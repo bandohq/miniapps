@@ -67,7 +67,8 @@ export default function CompanyMenu({ open, setOpen, anchorEl, setAnchorEl }: Co
                     style={{
                       fontWeight: 500,
                       fontSize: "14px",
-                      padding: "4px 12px"
+                      padding: "4px 12px",
+                      color: theme.palette.ink.i950,
                     }}
                   >
                     {section.title}
@@ -82,7 +83,7 @@ export default function CompanyMenu({ open, setOpen, anchorEl, setAnchorEl }: Co
                         className={item.className ?? ""}
                         target="_blank"
                         sx={{ 
-                          color: item.active ? theme.palette.text.primary : theme.palette.text.secondary,
+                          color: item.active ? theme.palette.ink.i950 : theme.palette.ink.i700,
                           fontWeight: item.active ? 500 : 400,
                           fontSize: "14px",
                           "&:hover": { backgroundColor: theme.palette.ink.i100 }
@@ -103,13 +104,13 @@ export default function CompanyMenu({ open, setOpen, anchorEl, setAnchorEl }: Co
               {/* Social icons */}
               <Box style={{ display: "flex", padding: "8px 12px", gap: "16px" }}>
                 <IconButton size="small" style={{ padding: "6px" }} href="https://github.com/bandohq" target="_blank">
-                  <Github style={{ width: "20px", height: "20px", color: theme.palette.text.primary }} />
+                  <Github style={{ width: "20px", height: "20px", color: theme.palette.ink.i950 }} />
                 </IconButton>
                 <IconButton size="small" style={{ padding: "6px" }} href="https://x.com/bandocool" target="_blank">
-                  <X style={{ width: "20px", height: "20px", color: theme.palette.text.primary }} />
+                  <X style={{ width: "20px", height: "20px", color: theme.palette.ink.i950 }} />
                 </IconButton>
                 <IconButton size="small" style={{ padding: "6px" }} href="https://t.me/bandocomunidad" target="_blank">
-                  <Telegram style={{ width: "20px", height: "20px", color: theme.palette.text.primary }} />
+                  <Telegram style={{ width: "20px", height: "20px", color: theme.palette.ink.i950 }} />
                 </IconButton>
               </Box>
               
@@ -124,7 +125,7 @@ export default function CompanyMenu({ open, setOpen, anchorEl, setAnchorEl }: Co
                     width: "100%",
                     padding: "4px 0",
                     textTransform: "none",
-                    color: theme.palette.text.primary
+                    color: theme.palette.ink.i950
                   }}
                   endIcon={legalOpen ? <ChevronUp /> : <ChevronDown />}
                 >
@@ -141,7 +142,7 @@ export default function CompanyMenu({ open, setOpen, anchorEl, setAnchorEl }: Co
                       target="_blank"
                       style={{ 
                         fontSize: "14px", 
-                        color: theme.palette.text.secondary, 
+                        color: theme.palette.ink.i700, 
                         textDecoration: "none", 
                         padding: "4px 0", 
                         display: "block" 
@@ -156,7 +157,7 @@ export default function CompanyMenu({ open, setOpen, anchorEl, setAnchorEl }: Co
                       target="_blank"
                       style={{ 
                         fontSize: "14px", 
-                        color: theme.palette.text.secondary, 
+                        color: theme.palette.ink.i700, 
                         textDecoration: "none", 
                         padding: "4px 0", 
                         display: "block" 

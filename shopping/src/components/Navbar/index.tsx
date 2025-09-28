@@ -91,7 +91,7 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar sx={{ color: "ink.i000" }} position="static" color="transparent" elevation={0}>
+      <AppBar sx={{ color: "ink.i950" }} position="static" color="transparent" elevation={0}>
         <Toolbar>
           <Box
             sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}
@@ -113,11 +113,16 @@ export default function Navbar() {
               <img
                 src={
                   theme.palette.mode === "dark"
-                    ? "/bando_white.svg"
-                    : "/bando.svg"
+                    ? "/bando.png"
+                    : "/bando.png"
                 }
                 alt={t("main:title", "Bando Logo")}
-                style={{ cursor: "pointer", width: "40px", height: "auto" }}
+                style={{
+                  cursor: "pointer", 
+                  width: "40px", 
+                  height: "auto", 
+                  borderRadius: "6px",
+                }}
               />
               <KeyboardArrowDownIcon
                 sx={{ maxWidth: "15px", cursor: "pointer" }}
@@ -133,11 +138,16 @@ export default function Navbar() {
               <img
                 src={
                   theme.palette.mode === "dark"
-                    ? "/bando_white.svg"
-                    : "/bando.svg"
+                    ? "/bando.png"
+                    : "/bando.png"
                 }
-                alt={t("main:title", "Gamepay Logo")}
-                style={{ cursor: "pointer", width: "40px", height: "auto" }}
+                alt={t("main:title", "Shopping Logo")}
+                style={{
+                  cursor: "pointer", 
+                  width: "40px", 
+                  height: "auto", 
+                  borderRadius: "6px",
+                }}
               />
             </IconButton>
             <Box sx={{ display: { xs: "none", sm: "flex" }, ml: 2 }}>

@@ -17,7 +17,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
           secondary: { main: '#59c6a8' },
           background: {
             default: '#FFFFFF',
-            paper: '#000000',
+            paper: '#F6F7F9',
           },
           ink: {
             i950: '#000000',
@@ -36,7 +36,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
           },
         }
       : {
-          // Dark mode palette
+          // Light mode palette
           primary: {
             main: '#40B494',
             light: '#E0FEF6',
@@ -46,7 +46,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
           secondary: { main: '#59c6a8' },
           background: {
             default: '#FFFFFF',
-            paper: '#000000',
+            paper: '#F6F7F9',
           },
           ink: {
             i950: '#000000',
@@ -62,7 +62,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
             i150: '#F6F7F9',
             i100: '#F2F2F2',
             i000: '#FFFFFF',
-          },
+          }
         }),
   },
   breakpoints: {

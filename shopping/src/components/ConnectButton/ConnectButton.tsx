@@ -33,15 +33,14 @@ export const ConnectButton = () => {
         variant="contained"
         sx={{
           borderRadius: "8px",
-          background: "linear-gradient(45deg, #FBD1FF 15%, #FF9CFF 100%)",
+          background: "white",
           textTransform: "none",
-          color: "rgb(185, 63, 237)",
+          color: "black",
           fontWeight: "600",
           fontSize: "0.875rem",
           padding: "8px 16px",
           border: "1px solid transparent",
           backgroundClip: "padding-box",
-          boxShadow: "0 0 30px rgba(244, 65, 229, 0.8), 0 0 60px rgba(68, 219, 246, 0.6), 0 0 90px rgba(244, 65, 229, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1)",
           position: "relative",
           overflow: "hidden",
           transition: "all 0.3s ease",
@@ -56,7 +55,6 @@ export const ConnectButton = () => {
             transition: "left 0.5s ease",
           },
           "&:hover": {
-            boxShadow: "0 0 50px rgba(244, 65, 229, 1), 0 0 100px rgba(68, 219, 246, 0.8), 0 0 150px rgba(244, 65, 229, 0.6), inset 0 0 30px rgba(255, 255, 255, 0.2)",
             transform: "translateY(-2px) scale(1.02)",
             "&::before": {
               left: "100%",
@@ -104,15 +102,14 @@ export const ConnectButton = () => {
                     variant="contained"
                     sx={{
                       borderRadius: "8px",
-                      background: "linear-gradient(45deg, #FBD1FF 15%, #FF9CFF 100%)",
+                      background: "white",
                       textTransform: "none",
-                      color: "rgb(185, 63, 237)",
+                      color: "black",
                       fontWeight: "600",
                       fontSize: "0.875rem",
                       padding: "8px 16px",
                       border: "1px solid transparent",
                       backgroundClip: "padding-box",
-                      boxShadow: "0 0 30px rgba(244, 65, 229, 0.8), 0 0 60px rgba(68, 219, 246, 0.6), 0 0 90px rgba(244, 65, 229, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1)",
                       position: "relative",
                       overflow: "hidden",
                       transition: "all 0.3s ease",
@@ -127,7 +124,6 @@ export const ConnectButton = () => {
                         transition: "left 0.5s ease",
                       },
                       "&:hover": {
-                        boxShadow: "0 0 30px rgba(244, 65, 229, 0.6), 0 0 60px rgba(68, 219, 246, 0.4)",
                         transform: "translateY(-1px)",
                         "&::before": {
                           left: "100%",
@@ -200,20 +196,15 @@ export const ConnectButton = () => {
                           md: "flex",
                           alignItems: "center",
                         },
-                        background: "rgba(244, 65, 229, 0.15)",
-                        border: "1px solid rgba(244, 65, 229, 0.6)",
-                        borderRadius: "6px",
-                        boxShadow: "0 0 20px rgba(244, 65, 229, 0.5), 0 0 40px rgba(244, 65, 229, 0.3), inset 0 0 10px rgba(244, 65, 229, 0.1)",
-                        color: "#F441E5",
+                        background: "transparent",
+                        border: "none",
+                        color: "black",
                         px: { xs: 0.5, sm: 1, md: 2 },
                         py: { xs: 0.2, sm: 0.5, md: 1 },
                         minWidth: { xs: 0, sm: 0, md: 36 },
                         fontWeight: "500",
                         transition: "all 0.3s ease",
                         "&:hover": {
-                          background: "rgba(244, 65, 229, 0.3)",
-                          boxShadow: "0 0 30px rgba(244, 65, 229, 0.8), 0 0 60px rgba(244, 65, 229, 0.5), inset 0 0 15px rgba(244, 65, 229, 0.2)",
-                          borderColor: "rgba(244, 65, 229, 0.9)",
                           transform: "scale(1.05)",
                         },
                       }}
@@ -242,20 +233,15 @@ export const ConnectButton = () => {
                     size="small"
                     sx={{
                       fontSize: { xs: 12, sm: "1rem" },
-                      background: "rgba(68, 219, 246, 0.15)",
-                      border: "1px solid rgba(68, 219, 246, 0.6)",
-                      borderRadius: "6px",
-                      boxShadow: "0 0 20px rgba(68, 219, 246, 0.5), 0 0 40px rgba(68, 219, 246, 0.3), inset 0 0 10px rgba(68, 219, 246, 0.1)",
-                      color: "#44DBF6",
+                      background: "transparent",
+                      border: "none",
+                      color: "black",
                       px: { xs: 0.5, sm: 1, md: 2 },
                       py: { xs: 0.2, sm: 0.5, md: 1 },
                       minWidth: { xs: 0, sm: 0, md: 36 },
                       fontWeight: "500",
                       transition: "all 0.3s ease",
                       "&:hover": {
-                        background: "rgba(68, 219, 246, 0.3)",
-                        boxShadow: "0 0 30px rgba(68, 219, 246, 0.8), 0 0 60px rgba(68, 219, 246, 0.5), inset 0 0 15px rgba(68, 219, 246, 0.2)",
-                        borderColor: "rgba(68, 219, 246, 0.9)",
                         transform: "scale(1.05)",
                       },
                     }}

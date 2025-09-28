@@ -1,5 +1,26 @@
+
 #root {
   margin: 0 auto;
+}
+
+/* Prevent iOS scroll bounce while allowing normal scrolling */
+html, body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+#root {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .logo {
