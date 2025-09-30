@@ -18,6 +18,7 @@ interface PromoSliderProps {
 
 export const PromoSlider: React.FC<PromoSliderProps> = ({ show }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [videoError, setVideoError] = useState<{[key: number]: boolean}>({});
 
   // Sample promotion banners - same as welcome drawer
   const promoBanners: PromoBanner[] = [
@@ -29,6 +30,13 @@ export const PromoSlider: React.FC<PromoSliderProps> = ({ show }) => {
       gradient: 'linear-gradient(135deg, rgba(244, 65, 229, 0.8) 0%, rgba(68, 219, 246, 0.8) 100%)',
     },
   ];
+
+  // Fallback image for when video fails to load
+  const fallbackImage = '/promo1.png';
+
+  const handleVideoError = (bannerId: number) => {
+    setVideoError(prev => ({ ...prev, [bannerId]: true }));
+  };
 
   useEffect(() => {
     if (show) {
@@ -115,19 +123,37 @@ export const PromoSlider: React.FC<PromoSliderProps> = ({ show }) => {
                       },
                     }}
                   >
-                    <video
-                      src={banner.image}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        borderRadius: '16px',
-                      }}
-                    />
+                    {videoError[banner.id] ? (
+                      <img
+                        src={fallbackImage}
+                        alt={`${banner.title} - ${banner.subtitle}`}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          borderRadius: '16px',
+                        }}
+                      />
+                    ) : (
+                      <video
+                        src={banner.image}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        onError={() => handleVideoError(banner.id)}
+                        onLoadStart={() => {
+                          // Reset error state when video starts loading
+                          setVideoError(prev => ({ ...prev, [banner.id]: false }));
+                        }}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          borderRadius: '16px',
+                        }}
+                      />
+                    )}
                   </Box>
                 </Box>
               ))}

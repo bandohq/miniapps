@@ -91,7 +91,6 @@ function App() {
               <Box
                 sx={{
                   textAlign: 'center',
-                  marginBottom: '24px',
                   maxWidth: '600px',
                 }}
               >
@@ -117,14 +116,14 @@ function App() {
               <PromoSlider show={true} /> {/* Always render, control with transform */}
             </Box>
             
-            {/* Widget with smooth margin animation */}
+            {/* Widget with smart responsive margin */}
             <Box
               sx={{
                 width: '100%',
                 display: 'flex',
                 justifyContent: 'center',
                 transition: 'margin-top 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-                marginTop: showPromoSlider ? { xs: '324px', sm: '324px', md: '344px' } : '0px', // Account for PromoSlider height + margin
+                marginTop: showPromoSlider ? 'clamp(280px, 30vh + 24px, 350px)' : '0px', // Smart responsive spacing
               }}
             >
               <Widget />
