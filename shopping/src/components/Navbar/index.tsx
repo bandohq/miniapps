@@ -297,7 +297,12 @@ export default function Navbar() {
           />
         </SwipeableDrawer>
       </Box>
-      <Popper id="settings-menu" anchorEl={anchorEl} open={settingsOpen}>
+      <Popper 
+        id="settings-menu" 
+        anchorEl={anchorEl} 
+        open={settingsOpen}
+        sx={{ zIndex: 3000 }}
+      >
         <ClickAwayListener onClickAway={handleSettingsClose}>
           <Paper
             elevation={3}

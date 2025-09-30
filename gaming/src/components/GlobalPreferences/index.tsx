@@ -105,7 +105,6 @@ export const GlobalPreferences: React.FC<GlobalPreferencesProps> = ({
         borderRadius: "8px", 
         overflow: "hidden",
         padding: "16px",
-        zIndex: 3000
       }}
     >
       <>
