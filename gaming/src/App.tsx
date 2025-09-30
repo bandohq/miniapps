@@ -111,20 +111,6 @@ function App() {
                 >
                   Instant gaming power
                 </Typography>
-                
-                <Typography
-                  variant="body1"
-                  sx={{
-                    fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.1rem' },
-                    color: 'rgba(255, 255, 255, 0.8)',
-                    fontWeight: '400',
-                    lineHeight: 1.5,
-                    maxWidth: '480px',
-                    margin: '0 auto',
-                  }}
-                >
-                  Buy gaming giftcards and vouchers directly from your wallet.
-                </Typography>
               </Box>
               
               {/* PromoSlider */}
