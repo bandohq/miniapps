@@ -107,20 +107,6 @@ function App() {
                 >
                   Instant shopping power
                 </Typography>
-                
-                <Typography
-                  variant="body1"
-                  sx={{
-                    fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.1rem' },
-                    color: '#000000',
-                    fontWeight: '400',
-                    lineHeight: 1.5,
-                    maxWidth: '480px',
-                    margin: '0 auto',
-                  }}
-                >
-                  Buy Amazon, Shopee, and more e-commerce giftcards directly from your wallet.
-                </Typography>
               </Box>
               
               {/* PromoSlider */}
