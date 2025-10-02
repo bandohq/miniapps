@@ -1,8 +1,8 @@
 {
   "accountAssociation": {
-    "header": "eyJmaWQiOjQ4ODA3NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDRkMDU0OUY0RDhiNDZFZTFmRTFlRkYxNmZhNmYzYjBEMWU2OUU2RUQifQ",
-    "payload": "eyJkb21haW4iOiJhcHAuYmFuZG8uY29vbCJ9",
-    "signature": "MHgyMDYyNDkzMGI5MTIzMGFhMzdmZGIwZjU4ZjVjODBlNDhlZjhhZTk3Zjg3YzZjNjBmOGNlMGM4NDE3NDJkNjFkMTA5NjAzNzI1YmJlMDMzZTAxYTc0ZGE5MGUxZDk5ZjhmMjdlODhiNTBiZmFlMjc4YWM4MGM2ZjgzZGY0ODE4ZDFi"
+    "header": "",
+    "payload": "",
+    "signature": ""
   },
   "miniapp": {
       "version": "1",
@@ -24,11 +24,10 @@
       "screenshotUrls": [
         "https://shopping.bando.cool/screenshot1.png",
         "https://shopping.bando.cool/screenshot2.png",
-        "https://shopping.bando.cool/screenshot3.png",
-        "https://shopping.bando.cool/screenshot4.png"
+        "https://shopping.bando.cool/screenshot3.png"
       ],
       "heroImageUrl": "https://shopping.bando.cool/opengraph-image.png",
-      "tagline": "Buy Amazon, Shopee, FlipKart, and more with any token",
+      "tagline": "Buy giftcards with any token",
       "ogTitle": "Shopping gift cards",
       "ogDescription": "Pay with crypto to buy Amazon, Shopee, FlipKart, and more. Seamless, secure, instant",
       "ogImageUrl": "https://shopping.bando.cool/opengraph-image.png"
