@@ -14,9 +14,9 @@
       "subtitle": "Spend at your favorite games",
       "description": "Buy in Fortnite, Roblox, Minecraft, and more. Seamless, secure, instant",
       "screenshotUrls": [
-        "https://games.bando.cool/screenshot1.png",
-        "https://games.bando.cool/screenshot2.png",
-        "https://games.bando.cool/screenshot3.png"
+        "https://games.bando.cool/screenshot1.jpg",
+        "https://games.bando.cool/screenshot2.jpg",
+        "https://games.bando.cool/screenshot3.jpg"
       ],
       "primaryCategory": "shopping",
       "tags": [
@@ -26,11 +26,11 @@
         "giftcard",
         "gaming"
       ],
-      "heroImageUrl": "https://games.bando.cool/opengraph-image.png",
+      "heroImageUrl": "https://games.bando.cool/opengraph-image.jpg",
       "tagline": "Spend at your favorite games",
       "ogTitle": "Gamepay",
       "ogDescription": "Pay with crypto to buy Fortnite, Roblox, Minecraft, and more. Seamless, secure, instant",
-      "ogImageUrl": "https://games.bando.cool/opengraph-image.png",
+      "ogImageUrl": "https://games.bando.cool/opengraph-image.jpg",
       "noindex": true
   },
   "baseBuilder": {
