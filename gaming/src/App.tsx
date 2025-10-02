@@ -123,7 +123,7 @@ function App() {
                 display: 'flex',
                 justifyContent: 'center',
                 transition: 'margin-top 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-                marginTop: showPromoSlider ? 'clamp(280px, 30vh + 24px, 350px)' : '0px', // Smart responsive spacing
+                marginTop: showPromoSlider ? { xs: '230px', sm: '300px' } : '0px', // Smart responsive spacing
               }}
             >
               <Widget />

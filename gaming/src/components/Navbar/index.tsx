@@ -144,7 +144,7 @@ export default function Navbar() {
           >
             <Box
               sx={{
-                display: { xs: "none", sm: "flex" },
+                display: { xs: "none", md: "flex" },
                 alignItems: "center",
                 cursor: "pointer",
               }}
@@ -168,7 +168,7 @@ export default function Navbar() {
               aria-label={t("main:main.openDrawer", "open drawer")}
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ display: { sm: "none" } }}
+              sx={{ display: { md: "none" } }}
             >
               <img
                 src={
@@ -180,7 +180,7 @@ export default function Navbar() {
                 style={{ cursor: "pointer", width: "40px", height: "auto" }}
               />
             </IconButton>
-            <Box sx={{ display: { xs: "none", sm: "flex" }, ml: 2 }}>
+            <Box sx={{ display: { xs: "none", md: "flex" }, ml: 2 }}>
               {menuItems.map((item, index) => (
                 <Box
                   key={index}
@@ -312,7 +312,7 @@ export default function Navbar() {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: "100%",

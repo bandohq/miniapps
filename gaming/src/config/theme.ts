@@ -68,8 +68,8 @@ const getDesignTokens = (mode: PaletteMode) => ({
   breakpoints: {
     values: {
       xs: 0,
-      sm: 600,
-      md: 900,
+      sm: 400,
+      md: 600,
       lg: 1280,
       xl: 1440,
     },
