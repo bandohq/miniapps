@@ -4,34 +4,37 @@
     "payload": "eyJkb21haW4iOiJhcHAuYmFuZG8uY29vbCJ9",
     "signature": "MHgyMDYyNDkzMGI5MTIzMGFhMzdmZGIwZjU4ZjVjODBlNDhlZjhhZTk3Zjg3YzZjNjBmOGNlMGM4NDE3NDJkNjFkMTA5NjAzNzI1YmJlMDMzZTAxYTc0ZGE5MGUxZDk5ZjhmMjdlODhiNTBiZmFlMjc4YWM4MGM2ZjgzZGY0ODE4ZDFi"
   },
-    "frame": {
+  "miniapp": {
       "version": "1",
-      "name": "Gaming gift cards",
+      "name": "Gamepay",
       "iconUrl": "https://games.bando.cool/appicon.png",
       "homeUrl": "https://games.bando.cool/",
-      "buttonTitle": "Start",
       "splashImageUrl": "https://games.bando.cool/appicon.png",
       "splashBackgroundColor": "#ffffff",
-      "subtitle": "Buy giftcards of your favorite games with any token",
-      "description": "Pay with crypto to buy Fortnite, Roblox, Minecraft, and more. Seamless, secure, instant",
-      "primaryCategory": "shopping",
-      "tags": [
-        "spend",
-        "shop",
-        "buy",
-        "giftcard",
-        "gaming"
-      ],
+      "subtitle": "Spend at your favorite games",
+      "description": "Buy in Fortnite, Roblox, Minecraft, and more. Seamless, secure, instant",
       "screenshotUrls": [
         "https://games.bando.cool/screenshot1.png",
         "https://games.bando.cool/screenshot2.png",
         "https://games.bando.cool/screenshot3.png",
         "https://games.bando.cool/screenshot4.png"
       ],
+      "primaryCategory": "shopping",
+      "tags": [
+        "spend",
+        "game",
+        "buy",
+        "giftcard",
+        "gaming"
+      ],
       "heroImageUrl": "https://games.bando.cool/opengraph-image.png",
       "tagline": "Buy giftcards of your favorite games with any token",
       "ogTitle": "Gaming gift cards",
       "ogDescription": "Pay with crypto to buy Fortnite, Roblox, Minecraft, and more. Seamless, secure, instant",
-      "ogImageUrl": "https://games.bando.cool/opengraph-image.png"
-    }
+      "ogImageUrl": "https://games.bando.cool/opengraph-image.png",
+      "noindex": true
+  },
+  "baseBuilder": {
+    "allowedAddresses": ["0xdC636AAFd6b1914C4a74D509e5693B367AC822d7"]
+  }
 }
