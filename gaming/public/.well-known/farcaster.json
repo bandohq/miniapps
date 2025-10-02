@@ -17,7 +17,6 @@
         "https://games.bando.cool/screenshot1.png",
         "https://games.bando.cool/screenshot2.png",
         "https://games.bando.cool/screenshot3.png",
-        "https://games.bando.cool/screenshot4.png"
       ],
       "primaryCategory": "shopping",
       "tags": [
@@ -28,8 +27,8 @@
         "gaming"
       ],
       "heroImageUrl": "https://games.bando.cool/opengraph-image.png",
-      "tagline": "Buy giftcards of your favorite games with any token",
-      "ogTitle": "Gaming gift cards",
+      "tagline": "Spend at your favorite games",
+      "ogTitle": "Gamepay",
       "ogDescription": "Pay with crypto to buy Fortnite, Roblox, Minecraft, and more. Seamless, secure, instant",
       "ogImageUrl": "https://games.bando.cool/opengraph-image.png",
       "noindex": true
