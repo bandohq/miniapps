@@ -31,7 +31,7 @@
       "ogTitle": "Gamepay",
       "ogDescription": "Pay with crypto to buy Fortnite, Roblox, Minecraft, and more. Seamless, secure, instant",
       "ogImageUrl": "https://games.bando.cool/opengraph-image.jpg",
-      "noindex": true
+      "noindex": false
   },
   "baseBuilder": {
     "allowedAddresses": ["0xdC636AAFd6b1914C4a74D509e5693B367AC822d7"]
