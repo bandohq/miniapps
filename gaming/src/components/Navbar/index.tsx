@@ -179,6 +179,7 @@ export default function Navbar() {
                 alt={t("main:title", "Gamepay Logo")}
                 style={{ cursor: "pointer", width: "40px", height: "auto" }}
               />
+              <MenuIcon />
             </IconButton>
             <Box sx={{ display: { xs: "none", md: "flex" }, ml: 2 }}>
               {menuItems.map((item, index) => (

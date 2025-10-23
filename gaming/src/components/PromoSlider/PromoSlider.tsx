@@ -32,7 +32,7 @@ export const PromoSlider: React.FC<PromoSliderProps> = ({ show }) => {
   ];
 
   // Fallback image for when video fails to load
-  const fallbackImage = '/promo1.png';
+  const fallbackImage = '/promo1.gif';
 
   const handleVideoError = (bannerId: number) => {
     setVideoError(prev => ({ ...prev, [bannerId]: true }));
@@ -123,7 +123,6 @@ export const PromoSlider: React.FC<PromoSliderProps> = ({ show }) => {
                       },
                     }}
                   >
-                    {videoError[banner.id] ? (
                       <img
                         src={fallbackImage}
                         alt={`${banner.title} - ${banner.subtitle}`}
@@ -134,26 +133,6 @@ export const PromoSlider: React.FC<PromoSliderProps> = ({ show }) => {
                           borderRadius: '16px',
                         }}
                       />
-                    ) : (
-                      <video
-                        src={banner.image}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        onError={() => handleVideoError(banner.id)}
-                        onLoadStart={() => {
-                          // Reset error state when video starts loading
-                          setVideoError(prev => ({ ...prev, [banner.id]: false }));
-                        }}
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
-                          borderRadius: '16px',
-                        }}
-                      />
-                    )}
                   </Box>
                 </Box>
               ))}
